@@ -11,7 +11,8 @@ html {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+	background-size: cover;
+	background-color: #2397a4;
 }
 
 .hide {
