@@ -1,0 +1,195 @@
+/*html {
+    background-image: url("../images/background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1997e7;
+}*/
+
+html {
+    background: url("../images/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.hide {
+	display: none;
+}
+
+.maincard {
+/*	background-color: #808080;*/
+/*	opacity: 0.85;*/
+	background-color: rgba(128,128,128,0.9);
+	text-align: center;
+	width: 85%;
+	max-width: 900px;
+	margin: auto;
+	margin-top: 20px;
+	padding-bottom: 20px;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+	font-size: 3em;
+/*	font-family: 'Amatic SC', cursive;*/
+	font-family: 'Permanent Marker', cursive;
+	margin: 10px 0px 30px 0px;
+	padding: 5px 0px 10px 0px;
+	color: white;
+/*	background-color: #768d2c;*/
+	background-color: rgba(118,141,44,0.8);
+}
+
+h2 {
+	font-size: 4em;
+	text-align: left;
+/*	font-family: 'Amatic SC', cursive;*/
+	font-family: 'Permanent Marker', cursive;
+	margin: 10px 0px 0px 0px;
+	padding: 5px 0px 10px 0px;
+/*	color: #768d2c;*/
+  	text-shadow: 1px 1px white;
+/*	background-color: #768d2c;*/
+/*	background-color: rgba(35,151,164,0.8);*/
+	transform: rotate(-20deg);
+	position: absolute;
+	left: 4%;
+	z-index: 5;
+}
+
+h3 {
+	font-size: 2.6em;
+	font-family: 'Amatic SC', cursive;
+/*	font-family: 'Permanent Marker', cursive;*/
+	margin: 30px auto 30px auto;
+	padding: 0px 10px 0px 10px;
+	color: white;
+}
+
+.status {
+	position: relative;
+}
+
+.grayscale {
+    filter: grayscale(100%);  
+}
+
+.start {
+	font-size: 2.6em;
+	font-family: 'Amatic SC', cursive;
+	color: white;
+	background-color: #0b5189;
+	margin: 70px auto 70px auto;
+	width: 40%;
+	border-color: white;
+	border-style: solid;
+	border-width: 2px;
+}
+
+.restart {
+	font-size: 2.6em;
+	font-family: 'Amatic SC', cursive;
+	color: white;
+	background-color: #0b5189;
+	margin: 50px auto 50px auto;
+	width: 40%;
+	border-color: white;
+	border-style: solid;
+	border-width: 2px;
+}
+
+.start:hover, .restart:hover {
+	background-color: #2397a4;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+p {
+	color: white;
+	font-family: 'Amatic SC', cursive;
+	font-size: 1.8em;
+	margin: 10px auto 10px auto;
+	width: 40%;
+
+}
+
+#funFact, #imageTest, #realAns {
+	width: 90%;
+}
+
+img {
+	width: 90%;
+/*	filter: grayscale(40%);*/
+	border-color: white;
+	border-style: solid;
+	border-width: 2px;
+}
+
+span {
+/*	background-color: #9b5729;	*/
+	background-color: #9ebd2f;
+  	border-radius: 5px;
+	padding: 1px 4px 1px 4px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.runningOut {
+/*	background-color: #9b5729;	*/
+	background-color: red;
+}
+
+.response {
+	background-color: #0b5189;	
+	border-color: grey;
+	border-style: solid;
+	border-width: 2px;
+/*  	border-radius: 5px;*/
+}
+
+.response:hover {
+	background-color: #2397a4;
+	border-color: white;
+	border-style: solid;
+	border-width: 2px;
+}
+
+@media only screen and (max-width: 980px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+.maincard {
+	width: 90%;
+}
+
+p {
+	width: 75%;
+}
+
+@media only screen and (max-width: 640px) {
+
+.maincard {
+	width: 95%;
+}
+
+p {
+	width: 85%;
+	font-size: 1.4em;
+}
+
+h1 {
+	font-size: 1.8em;
+}
+
+h3 {
+	font-size: 1.7em;
+}
+
+h2 {
+	font-size: 3em;
+}
+
+}
