@@ -148,28 +148,28 @@ $(".response").click(function() {
 })
 
 let correctResponse = function() {
-	$(".game").addClass("hide");
-	$(".status").removeClass("hide");
 	$("#answerStat").text("Correct!");
 	$("#answerStat").css('color','#768d2c');
 	$("#imageTest").html("<img src=" + potentialQuestions[currentQuestion].image+ ">")
 	$("#imageTest").removeClass("grayscale");
 	$("#realAns").text("");
 	$("#funFact").text(potentialQuestions[currentQuestion].funFact);
+	$(".game").addClass("hide");
+	$(".status").removeClass("hide");
 	correctAns++;
 	currentQuestion++;
 	setTimeout(nextQuestion, 5000);
 }
 
 let incorrectResponse = function() {
-	$(".game").addClass("hide");
-	$(".status").removeClass("hide");
 	$("#answerStat").text("Nope!");
 	$("#answerStat").css('color','red');
 	$("#imageTest").html("<img src=" + potentialQuestions[currentQuestion].image+ ">")
 	$("#imageTest").addClass("grayscale");
 	$("#realAns").text("Correct Answer: " + potentialQuestions[currentQuestion].correctText);
 	$("#funFact").text(potentialQuestions[currentQuestion].funFact);
+	$(".game").addClass("hide");
+	$(".status").removeClass("hide");
 	incorrectAns++;
 	currentQuestion++;
 	setTimeout(nextQuestion, 5000);
@@ -177,14 +177,14 @@ let incorrectResponse = function() {
 
 let timesUp = function() {
 	clearInterval(countdown);
-	$(".game").addClass("hide");
-	$(".status").removeClass("hide");
 	$("#answerStat").text("Time's up!");
 	$("#answerStat").css('color','red');
 	$("#imageTest").html("<img src=" + potentialQuestions[currentQuestion].image+ ">")
 	$("#imageTest").addClass("grayscale");
 	$("#realAns").text("Correct Answer: " + potentialQuestions[currentQuestion].correctText);
 	$("#funFact").text(potentialQuestions[currentQuestion].funFact);
+	$(".game").addClass("hide");
+	$(".status").removeClass("hide");
 	unanswered++;
 	currentQuestion++;
 	setTimeout(nextQuestion, 5000);
