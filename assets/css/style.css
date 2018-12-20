@@ -12,12 +12,9 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
 	background-size: cover;
-	background-color: #2397a4;
+	background-color: #0b5189;
 }
 
-body {
-	background-color: #2397a4;	
-}
 .hide {
 	display: none;
 }
